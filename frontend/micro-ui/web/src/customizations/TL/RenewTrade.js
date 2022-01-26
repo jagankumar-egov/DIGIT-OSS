@@ -221,6 +221,7 @@ const TLRenewTrade = (  props ) => {
     "TLRenewTrade",
     TLRenewTrade
   );
+  return <TLRenewTrade/>;
 }; 
  
 export default customize;

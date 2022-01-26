@@ -452,8 +452,9 @@ const TLCheckPage = ({ onSubmit, value }) => {
 
 // TLGSTNumber
 
-const customize = () => {
+const customize = (props) => {
   window.Digit.ComponentRegistryService.setComponent("TLCheckPage", TLCheckPage);
+  return <TLCheckPage {...props}/>
 };
 
 export default customize;
