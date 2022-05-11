@@ -17,6 +17,7 @@ import CreateChallen from "./mCollect/CreateChallen"
 import TLRenewTrade from "./TL/RenewTrade";
 import TLLinks from "./TL/TLCard";
 import TlApplicationDetails from "./TL/Hooks";
+import { OverideLogout } from "./Hooks";
 
 
 export const customizations = [
@@ -36,5 +37,6 @@ export const customizations = [
   CreateChallen,
   TLRenewTrade,
   TLLinks,
-  TlApplicationDetails
+  TlApplicationDetails,
+  OverideLogout
 ];
