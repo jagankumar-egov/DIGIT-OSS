@@ -5,11 +5,7 @@ import { useRouteMatch } from "react-router-dom";
 import CitizenApp from "./pages/citizen";
 import Create from "./pages/citizen/create/index";
 
-const componentsToRegister = {
-    Response,
-    FSCreate: Create,
-    FSModule
-};
+
 
 export const FSModule = ({ stateCode, userType, tenants }) => {
     const { path, url } = useRouteMatch();
@@ -36,7 +32,11 @@ export const FSLinks = ({ matchPath, userType }) => {
 
     return <CitizenHomeCard header={t("FarmerSurvey")} links={links} Icon={() => <PTIcon className="fill-path-primary-main" />} />;
 };
-
+const componentsToRegister = {
+    Response,
+    FSCreate: Create,
+    FSModule
+};
 export const initFSComponents = () => {
     Object.entries(componentsToRegister).forEach(([key, value]) => {
         Digit.ComponentRegistryService.setComponent(key, value);
