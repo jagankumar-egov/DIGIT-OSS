@@ -84,7 +84,7 @@ import EditApplication from "./pages/employee/EditApplication";
 import Response from "./pages/Response";
 import TransferOwnership from "./pages/employee/PropertyMutation";
 import DocsRequired from "./pages/employee/PropertyMutation/docsRequired";
-import SelectOtp from "../../core/src/pages/citizen/Login/SelectOtp";
+// import SelectOtp from "../../core/src/pages/citizen/Login/SelectOtp";
 import CitizenFeedback from "@egovernments/digit-ui-module-core/src/components/CitizenFeedback";
 import AcknowledgementCF from "@egovernments/digit-ui-module-core/src/components/AcknowledgementCF";
 // PTAcknowledgementCF from "@egovernments/digit-ui-module-core/src/components/PTAcknowledgementCF";
@@ -167,7 +167,7 @@ const componentsToRegister = {
   //PTCitizenFeedbackPopUp,
   // PTCitizenFeedback,
   // PTAcknowledgementCF,
-  SelectOtp, // To-do: Temp fix, Need to check why not working if selectOtp module is already imported from core module
+  // SelectOtp, // To-do: Temp fix, Need to check why not working if selectOtp module is already imported from core module
   AcknowledgementCF,
   CitizenFeedback,
 };
